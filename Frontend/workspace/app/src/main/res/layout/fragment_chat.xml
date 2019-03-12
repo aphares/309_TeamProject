@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/messages_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:divider="#fff"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/chatboxLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        android:stackFromBottom="true"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <LinearLayout
+        android:id="@+id/chatboxLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <EditText
+            android:id="@+id/chatEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="Enter your message here..."
+            android:inputType="textNoSuggestions"
+            android:maxLines="6"
+            android:textColor="#070707" />
+
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_send_black_24dp"
+            android:padding="20dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="TODO"
+            android:onClick="sendMessage"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

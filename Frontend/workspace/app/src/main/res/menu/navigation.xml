@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- "Chat item" -->
+    <item
+        android:id="@+id/navigationChat"
+        android:icon="@drawable/ic_chat_black_24dp"
+        android:title="@string/titleChat" />
+
+    <!-- "Queue item" -->
+    <item
+        android:id="@+id/navigationQueue"
+        android:icon="@drawable/ic_group_black_24dp"
+        android:title="@string/titleQueue" />
+
+    <!-- "Classwork item" -->
+    <item
+        android:id="@+id/navigationClasswork"
+        android:icon="@drawable/ic_computer_black_24dp"
+        android:title="@string/titleClasswork" />
+
+    <!-- "Navigation item" -->
+    <item
+        android:id="@+id/navigationSettings"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="@string/titleSettings" />
+
+</menu>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="appTitle">Lab Assistant</string>
+    <string name="titleChat">Chat</string>
+    <string name="titleQueue">Queue</string>
+    <string name="titleClasswork">Classwork</string>
+    <string name="titleSettings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

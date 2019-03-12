@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+ 
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://cs309-rr-2.misc.iastate.edu:3306/LabAssistant</property>
+    <property name="hibernate.connection.username">team_rr2</property>
+    <property name="hibernate.connection.password">RR_2projectuser</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <mapping class="LabAssistant.user_table"/>
+    <mapping class="LabAssistant.user_table"/>
+    <mapping class="LabAssistant.TA"/>
+    <mapping class="LabAssistant.Student"/>
+    <mapping class="LabAssistant.Prof"/>
+  </session-factory>
+</hibernate-configuration>

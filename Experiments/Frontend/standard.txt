@@ -1,0 +1,4 @@
+Naming Convention
+ - Buttons
+    - btn<Functionality>
+    - camelCase

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/classroomTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMaxWidth="0dp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/studentClassroomTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Student" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/taClassroomTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="TA" />
+
+    </android.support.design.widget.TabLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/search_bar"
+        android:gravity="center|end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classroomTabLayout"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/taSearchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:layout_weight="15"
+            android:ems="10"
+            android:gravity="left"
+            android:hint="Search"
+            android:singleLine="false"></EditText>
+
+        <ImageView
+            android:id="@+id/sortImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_filter_list_black_24dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/classroomListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

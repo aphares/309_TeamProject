@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: Demo1_Experiment
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: djmei
+Implementation-Vendor-Id: com.aphares
+Build-Jdk: 1.8.0_161
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/Demo1_Experiment
+Created-By: Maven Integration for Eclipse
+

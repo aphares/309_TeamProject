@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryLight">#C20101</color>
+    <color name="colorPrimaryDarkLight">#9C0000</color>
+    <color name="colorAccentLight">#D81B60</color>
+    <color name="colorNavIconsLight">#FF000000</color>
+    <color name="colorMessagesContentReceivedLight">#B0E40000</color>
+    <color name="colorMessagesContentSendLight">#d35b5b</color>
+    <color name="colorPopupViewLight">#d6d6d6</color>
+</resources>
